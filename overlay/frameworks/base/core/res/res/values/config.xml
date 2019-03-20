@@ -655,6 +655,9 @@
         hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+    
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
 
     <!-- Screen brightness used to dim the screen when the user activity
         timeout expires.  May be less than the minimum allowed brightness setting
