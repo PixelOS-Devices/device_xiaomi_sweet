@@ -169,6 +169,11 @@
         <item>3</item>
     </integer-array>
 
+    <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
+         supported by the device, but not necessarily appear in config_availableColorModes. The
+         regularly selected color mode will be used if this value is negative. -->
+    <integer name="config_accessibilityColorMode">2</integer>
+
     <!-- Configure mobile tcp buffer sizes in the form:
         rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
         If no value is found for the rat-name in use, the system default will be applied.
