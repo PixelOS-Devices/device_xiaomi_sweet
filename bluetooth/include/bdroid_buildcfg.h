@@ -21,13 +21,20 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#pragma push_macro("PROPERTY_VALUE_MAX")
-#include <cutils/properties.h>
+#include <stdint.h>
 #include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
 
 inline const char* BtmGetDefaultName()
 {
-	char device[PROPERTY_VALUE_MAX];
+	char device[92];
 	property_get("ro.product.model", device, "");
 
 	if (!strcmp("M2101K6I", device)) {
@@ -46,5 +53,4 @@ inline const char* BtmGetDefaultName()
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
-#pragma pop_macro("PROPERTY_VALUE_MAX")
 #endif
