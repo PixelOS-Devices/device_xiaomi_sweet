@@ -19,3 +19,6 @@ allowxperm vendor_hal_citsensorservice_xiaomi_default self:qipcrtr_socket ioctl 
 
 get_prop(vendor_hal_citsensorservice_xiaomi_default, vendor_sensors_prop)
 userdebug_or_eng(`get_prop(vendor_hal_citsensorservice_xiaomi_default, vendor_sensors_dbg_prop)')
+
+# Allow to use wakelock
+wakelock_use(vendor_hal_citsensorservice_xiaomi_default)

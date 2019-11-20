@@ -8,3 +8,9 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     writepid /dev/cpuset/system-background/tasks
     disabled
+
+service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+    override
+    class late_start
+    user system
+    group system input wakelock
