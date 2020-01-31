@@ -76,6 +76,10 @@
     <string name="dirac_preset_metal">Metal</string>
     <string name="dirac_preset_bass_booster">Bass Booster</string>
 
+    <!-- Raise to wake strings-->
+    <string name="raise_to_wake_gesture_title">Raise to wake</string>
+    <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
+
     <!-- Touch Control Settings -->
     <string name="touch_control_title">Touch Control</string>
     <string name="touch_game_mode_title">Enable game mode</string>
