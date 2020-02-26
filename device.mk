@@ -29,6 +29,10 @@ AB_OTA_UPDATER := false
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
