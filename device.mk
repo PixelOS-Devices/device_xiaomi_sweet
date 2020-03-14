@@ -8,6 +8,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# The first api level, device has been commercially launched on.
+PRODUCT_SHIPPING_API_LEVEL := 30
+
 PRODUCT_TARGET_VNDK_VERSION := 30
 
 # A/B
