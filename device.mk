@@ -28,6 +28,15 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # A/B
 AB_OTA_UPDATER := false
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    libaacwrapper
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothQti
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -84,6 +93,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
+
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
 
 # Telephony
 PRODUCT_PACKAGES += \
