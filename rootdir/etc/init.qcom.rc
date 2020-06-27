@@ -10,6 +10,15 @@ on late-fs
     start vendor.hwcomposer-2-4
     start vendor.qti.hardware.display.allocator
 
+on property:init.svc.cnss_diag=running
+    stop cnss_diag
+
+on property:init.svc.tcpdump=running
+    stop tcpdump
+
+on property:init.svc.vendor.ipacm-diag=running
+    stop vendor.ipacm-diag
+
 # perf tuning
 on property:vendor.post_boot.parsed=1
     # Setup runtime cpusets
