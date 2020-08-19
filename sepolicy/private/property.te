@@ -1,1 +1,1 @@
-type sensors_prop, property_type;
+vendor_internal_prop(sensors_prop)
