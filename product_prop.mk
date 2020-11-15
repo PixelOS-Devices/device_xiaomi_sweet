@@ -1,6 +1,7 @@
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 #DPI
 PRODUCT_PROPERTY_OVERRIDES += \
