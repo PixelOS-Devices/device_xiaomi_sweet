@@ -129,6 +129,7 @@
 
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
+        <item>/system/bin/surfaceflinger</item>
         <item>/system/framework/services.jar</item>
         <item>/system/framework/oat/arm64/services.odex</item>
         <item>/system/framework/oat/arm/services.odex</item>
@@ -152,6 +153,7 @@
 
     <!-- List of files pinned by the Pinner Service with the JIT Zygote boot image b/119800099 -->
     <string-array translatable="false" name="config_jitzygoteBootImagePinnerServiceFiles">
+        <item>/system/bin/surfaceflinger</item>
         <item>/system/framework/framework.jar</item>
         <item>/system/framework/services.jar</item>
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
