@@ -48,6 +48,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.sf.duration=16600000 \
     debug.sf.earlyGl.app.duration=16600000
 
+# Priv-app permission
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.control_privapp_permissions=log
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.dbg.volte_avail_ovr=1 \
