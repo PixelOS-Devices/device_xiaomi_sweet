@@ -128,9 +128,7 @@ vendor/lib/modules/qca_cld3_wlan.ko:product/vendor_overlay/30/lib/modules/qca_cl
 
 # Perf
 system_ext/lib64/vendor.qti.hardware.iop@2.0.so
-system_ext/lib64/vendor.qti.hardware.perf@2.0.so
 system_ext/lib/vendor.qti.hardware.iop@2.0.so
-system_ext/lib/vendor.qti.hardware.perf@2.0.so
 
 # RIL
 system_ext/etc/permissions/qti_libpermissions.xml
