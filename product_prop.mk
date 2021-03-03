@@ -7,6 +7,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.android.camera2 \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Chipset
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.soc.manufacturer=Qualcomm \
+	ro.soc.model=SDM7150
+
 #DPI
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=440
