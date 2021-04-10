@@ -1,5 +1,42 @@
 # All unpinned blobs are extracted from sweetin-qssi-user-11-RKQ1.200826.002-V12.0.1.0.RKFINXM-release-keys
 
+# Diag
+system_ext/lib64/libdiag_system.so
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+
+# IMS
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
+system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
+system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
+system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
+system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
+system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
+system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so
+system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
+system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so
+system_ext/lib64/lib-imsvideocodec.so
+system_ext/lib64/lib-imsvt.so
+system_ext/lib64/lib-imsvtextutils.so
+system_ext/lib64/lib-imsvtutils.so
+system_ext/lib64/libimscamera_jni.so
+system_ext/lib64/libimsmedia_jni.so
+system_ext/lib64/vendor.qti.ims.callcapability@1.0.so
+system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.ims.factory@1.0.so
+-system_ext/priv-app/ims/ims.apk
+
 # Kernel Modules
 vendor/lib/modules/audio_adsp_loader.ko:product/vendor_overlay/30/lib/modules/audio_adsp_loader.ko
 vendor/lib/modules/audio_apr.ko:product/vendor_overlay/30/lib/modules/audio_apr.ko
@@ -42,6 +79,24 @@ vendor/lib/modules/mpq-adapter.ko:product/vendor_overlay/30/lib/modules/mpq-adap
 vendor/lib/modules/mpq-dmx-hw-plugin.ko:product/vendor_overlay/30/lib/modules/mpq-dmx-hw-plugin.ko
 vendor/lib/modules/qca_cld3_wlan.ko:product/vendor_overlay/30/lib/modules/qca_cld3_wlan.ko
 
+# RIL
+system_ext/etc/permissions/qti_libpermissions.xml
+system_ext/etc/permissions/qti_permissions.xml
+-system_ext/app/DeviceInfo/DeviceInfo.apk
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+-system_ext/app/datastatusnotification/datastatusnotification.apk
+-system_ext/app/embms/embms.apk
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
+system_ext/etc/permissions/embms.xml
+system_ext/etc/permissions/qcrilhook.xml
+system_ext/etc/permissions/telephonyservice.xml
+system_ext/framework/embmslibrary.jar
+system_ext/framework/qcrilhook.jar
+
 # Soundfx - from LA.UM.8.9.r1-08400-SM6xx.0
 vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/libvolumelistener.so:|672ad577dab5221bdd7f840d87313e3483aebde0
 vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so|c25cc5e8c3622eb97d3bb4814aeb301c01d8b046
+
+# Telephony
+system_ext/framework/qti-telephony-common.jar
