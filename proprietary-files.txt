@@ -99,4 +99,4 @@ vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/li
 vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so|c25cc5e8c3622eb97d3bb4814aeb301c01d8b046
 
 # Telephony
-system_ext/framework/qti-telephony-common.jar
+#system_ext/framework/qti-telephony-common.jar
