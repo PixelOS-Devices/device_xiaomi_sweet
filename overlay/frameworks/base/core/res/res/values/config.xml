@@ -226,4 +226,8 @@
 
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
+
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+        in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
 </resources>
