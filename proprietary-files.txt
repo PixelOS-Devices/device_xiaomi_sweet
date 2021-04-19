@@ -1,5 +1,31 @@
 # All unpinned blobs are extracted from sweetin-qssi-user-11-RKQ1.200826.002-V12.0.1.0.RKFINXM-release-keys
 
+# CNE
+system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
+system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
+system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar
+system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
+system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
+system_ext/lib64/com.quicinc.cne.api@1.0.so
+system_ext/lib64/com.quicinc.cne.api@1.1.so
+system_ext/lib64/com.quicinc.cne.constants@1.0.so
+system_ext/lib64/com.quicinc.cne.constants@2.0.so
+system_ext/lib64/com.quicinc.cne.constants@2.1.so
+system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.connection@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.connection@1.1.so
+system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
+
 # Diag
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
