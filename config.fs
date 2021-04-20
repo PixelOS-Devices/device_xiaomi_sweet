@@ -228,3 +228,10 @@ mode: 0771
 user: AID_MEDIA
 group: AID_MEDIA
 caps: 0
+
+
+[product/vendor_overlay/*/bin/*]
+mode: 0755
+user: AID_ROOT
+group: AID_SHELL
+caps: 0
