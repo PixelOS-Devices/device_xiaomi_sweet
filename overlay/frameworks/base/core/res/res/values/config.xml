@@ -623,11 +623,11 @@
 
     <!-- Default screen brightness setting.
         Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">536</integer>
+    <integer name="config_screenBrightnessSettingDefault">150</integer>
 
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">2047</integer>
+    <integer name="config_screenBrightnessSettingMaximum">255</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
         The user is forbidden from setting the brightness below this level. -->
