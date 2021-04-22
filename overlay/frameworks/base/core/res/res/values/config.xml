@@ -623,7 +623,7 @@
         the framework from using higher refresh rates, even if display modes with higher refresh
         rates are available from hardware composer. Only has an effect if the value is
         non-zero. -->
-    <integer name="config_defaultPeakRefreshRate">60</integer>
+    <integer name="config_defaultPeakRefreshRate">120</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
         timeout expires.  May be less than the minimum allowed brightness setting
