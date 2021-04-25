@@ -14,26 +14,34 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Flag indicating whether we should enable the automatic brightness.
         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
+
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
-         carrier provisioning. If false: hard disabled. If true: then depends on carrier
-         provisioning, availability etc -->
+        carrier provisioning. If false: hard disabled. If true: then depends on carrier
+        provisioning, availability etc -->
     <bool name="config_carrier_volte_available">true</bool>
+
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
+
     <!-- Flag specifying whether VT is available on device -->
     <bool name="config_device_vt_available">true</bool>
+
     <!-- If true, the doze component is not started until after the screen has been
         turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+
     <!-- Control whether the always on display mode is available. This should only be enabled on
         devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
         states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
+
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
         device from the display on/off state.
         When false, autosuspend_disable() will be called before the display is turned on
@@ -49,6 +57,14 @@
         Refer to autosuspend.h for details.
     -->
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+        in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
     <!-- Set to true if the wifi display supports compositing content stored
         in gralloc protected buffers.  For this to be true, there must exist
         a protected hardware path for surface flinger to composite and send
@@ -60,6 +76,10 @@
         flag is set for wifi displays.
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
+
+    <!-- For WPA3 SoftaAp -->
+    <bool name="config_wifi_wap3_sap_mode_enabled">true</bool>
+
     <!-- ComponentName of a dream to show whenever the system would otherwise have
         gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
         try to start this dream if possible.  The dream should typically call startDozing()
@@ -69,10 +89,36 @@
         Note that doze dreams are not subject to the same start conditions as ordinary dreams.
         Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
+
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
+
+    <!--The bounding path of the cutout region of the main built-in display.
+        Must either be empty if there is no cutout region, or a string that is parsable by
+        {@link android.util.PathParser}.
+        The path is assumed to be specified in display coordinates with pixel units and in
+        the display's native orientation, with the origin of the coordinate system at the
+        center top of the display. Optionally, you can append either `@left` or `@right` to the
+        end of the path string, in order to change the path origin to either the top left,
+         or top right of the display.
+        To facilitate writing device-independent emulation overlays, the marker `@dp` can be
+        appended after the path string to interpret coordinates in dp instead of px units.
+        Note that a physical cutout should be configured in pixels for the best results.
+        Example for a 10px x 10px square top-center cutout:
+            <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
+        Example for a 10dp x 10dp square top-center cutout:
+            <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
+        @see https://www.w3.org/TR/SVG/paths.html#PathData
+        -->
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -33 V 93 H 33 V 0 H 0 Z</string>
+
+    <!-- Setting this true forces the headset jack switches to use the/dev/input/event subsystem
+                  rather than the uevent framework. -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
@@ -80,6 +126,7 @@
     <string-array name="config_biometric_sensors">
         <item>0:2:15</item>
     </string-array>
+
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
         <item>/system/framework/arm64/boot.oat</item>
@@ -98,6 +145,7 @@
         <item>/system/lib64/libRSCpuRef.so</item>
         <item>/system/lib64/libblas.so</item>
     </string-array>
+
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
         <item>0</item>
@@ -114,11 +162,12 @@
         <item>264</item>
         <item>265</item>
     </integer-array>
+
     <!-- Configure mobile tcp buffer sizes in the form:
         rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
         If no value is found for the rat-name in use, the system default will be applied.
     -->
-     <string-array name="config_mobile_tcp_buffers">
+    <string-array name="config_mobile_tcp_buffers">
         <item>5gnr:2097152,6291456,16777216,512000,2097152,8388608</item>
         <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
         <item>lte_ca:4096,6291456,12582912,4096,1048576,2097152</item>
@@ -131,13 +180,15 @@
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
-     <!-- List of regexpressions describing the interface (if any) that represent tetherable
+
+    <!-- List of regexpressions describing the interface (if any) that represent tetherable
         bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
         should be empty. -->
     <string-array name="config_tether_bluetooth_regexs">
         <item>bnep\\d</item>
         <item>bt-pan</item>
     </string-array>
+
     <!-- Dhcp range (min, max) to use for tethering purposes -->
     <string-array name="config_tether_dhcp_range">
         <item>192.168.42.2</item>
@@ -161,6 +212,7 @@
         <item>192.168.51.2</item>
         <item>192.168.51.254</item>
     </string-array>
+
     <!-- Array of allowable ConnectivityManager network types for tethering -->
     <integer-array name="config_tether_upstream_types">
         <item>0</item>
@@ -168,6 +220,7 @@
         <item>5</item>
         <item>7</item>
     </integer-array>
+
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
         USB interfaces.  If the device doesn't want to support tethering over USB this should
         be empty.  An example would be "usb.*" -->
@@ -175,6 +228,7 @@
         <item>usb\\d</item>
         <item>rndis\\d</item>
     </string-array>
+
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
         Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
         should be empty.  An example would be "softap.*" -->
@@ -182,6 +236,7 @@
         <item>wlan0</item>
         <item>wigig0</item>
     </string-array>
+
     <!-- The network types we support -->
     <string-array name="networkAttributes">
         <item>wifi,1,1,1,-1,true</item>
@@ -197,41 +252,13 @@
         <item>mobile_emergency,15,0,5,-1,true</item>
         <item>ethernet,9,9,9,-1,true</item>
     </string-array>
+
     <!-- Make sure ethernet can coexists with wifi -->
     <string-array name="radioAttributes">
         <item>1,1</item>
         <item>0,1</item>
         <item>7,1</item>
     </string-array>
-    
-    <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">true</bool>
-
-    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
-         will be used. -->
-    <integer name="config_burnInProtectionMaxRadius">70</integer>
-
-    <!-- Specifies the minimum burn-in offset horizontally. -->
-    <integer name="config_burnInProtectionMinHorizontalOffset">-15</integer>
-
-    <!-- Specifies the maximum burn-in offset horizontally. -->
-    <integer name="config_burnInProtectionMaxHorizontalOffset">15</integer>
-
-    <!-- Specifies the minimum burn-in offset vertically. -->
-    <integer name="config_burnInProtectionMinVerticalOffset">-40</integer>
-
-    <!-- Specifies the maximum burn-in offset vertically. -->
-    <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
-
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-        in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
-
-    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
-    <integer name="config_screenRecorderMaxFramerate">90</integer>
-
-    <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
@@ -292,9 +319,9 @@
         config_screenBrightnessMaximumNits, the display brightness is defined as the measured
         brightness of an all-white image.
         If this is defined then:
-           - config_autoBrightnessLcdBacklightValues should not be defined
-           - config_screenBrightnessNits must be defined
-           - config_screenBrightnessBacklight must be defined
+         - config_autoBrightnessLcdBacklightValues should not be defined
+         - config_screenBrightnessNits must be defined
+         - config_screenBrightnessBacklight must be defined
         This array should have size one greater than the size of the config_autoBrightnessLevels
         array. The brightness values must be non-negative and non-decreasing. This must be
         overridden in platform specific overlays -->
@@ -464,6 +491,35 @@
         <item>255</item>
     </integer-array>
 
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+        values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+        should be measured with an all white image while the display is in the fully on state.
+        Note that this value should *not* reflect the maximum brightness value for any high
+        brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+        This array should be equal in size to config_screenBrightnessBacklight -->
+    <integer-array name="config_screenBrightnessNits">
+        <item>2</item>
+        <item>4</item>
+        <item>22</item>
+        <item>30</item>
+        <item>68</item>
+        <item>95</item>
+        <item>133</item>
+        <item>165</item>
+        <item>192</item>
+        <item>218</item>
+        <item>255</item>
+        <item>290</item>
+        <item>326</item>
+        <item>352</item>
+        <item>384</item>
+        <item>399</item>
+        <item>422</item>
+        <item>432</item>
+        <item>442</item>
+        <item>455</item>
+    </integer-array>
+
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
         config_dynamicHysteresisLuxLevels. The brightening threshold is calculated as
@@ -528,35 +584,6 @@
         <item>0</item>
     </integer-array>
 
-    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
-        values in the config_screenBrightnessBacklight array.  On OLED displays these  values
-        should be measured with an all white image while the display is in the fully on state.
-        Note that this value should *not* reflect the maximum brightness value for any high
-        brightness modes but only the maximum brightness value obtainable in a sustainable manner.
-        This array should be equal in size to config_screenBrightnessBacklight -->
-    <integer-array name="config_screenBrightnessNits">
-        <item>2</item>
-        <item>4</item>
-        <item>22</item>
-        <item>30</item>
-        <item>68</item>
-        <item>95</item>
-        <item>133</item>
-        <item>165</item>
-        <item>192</item>
-        <item>218</item>
-        <item>255</item>
-        <item>290</item>
-        <item>326</item>
-        <item>352</item>
-        <item>384</item>
-        <item>399</item>
-        <item>422</item>
-        <item>432</item>
-        <item>442</item>
-        <item>455</item>
-    </integer-array>
-
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
         config_screenThresholdLevels. The darkening threshold is calculated as
@@ -566,9 +593,6 @@
     <integer-array name="config_screenDarkeningThresholds">
         <item>0</item>
     </integer-array>
-
-    <!-- For WPA3 SoftaAp -->
-    <bool name="config_wifi_wap3_sap_mode_enabled">true</bool>
 
     <!-- Default screen brightness for VR setting. -->
     <integer name="config_screenBrightnessForVrSettingDefault">1376</integer>
@@ -587,7 +611,7 @@
         auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
 
-   <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
+    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
         for debouncing the light sensor.  Different constants are used to debounce the light sensor
         when adapting to brighter or darker environments.  This parameter controls how quickly
         brightness changes occur in response to an observed change in light level that exceeds the
@@ -595,7 +619,7 @@
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
 
-        <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
+    <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
         the framework from using higher refresh rates, even if display modes with higher refresh
         rates are available from hardware composer. Only has an effect if the value is
         non-zero. -->
@@ -618,7 +642,7 @@
     <integer name="config_screenBrightnessSettingDefault">150</integer>
 
     <!-- Maximum screen brightness allowed by the power manager.
-         The user is forbidden from setting the brightness above this level. -->
+        The user is forbidden from setting the brightness above this level. -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
@@ -628,28 +652,27 @@
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">600</integer>
 
-    <!--The bounding path of the cutout region of the main built-in display.
-        Must either be empty if there is no cutout region, or a string that is parsable by
-        {@link android.util.PathParser}.
-        The path is assumed to be specified in display coordinates with pixel units and in
-        the display's native orientation, with the origin of the coordinate system at the
-        center top of the display. Optionally, you can append either `@left` or `@right` to the
-        end of the path string, in order to change the path origin to either the top left,
-         or top right of the display.
-        To facilitate writing device-independent emulation overlays, the marker `@dp` can be
-        appended after the path string to interpret coordinates in dp instead of px units.
-        Note that a physical cutout should be configured in pixels for the best results.
-        Example for a 10px x 10px square top-center cutout:
-            <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
-        Example for a 10dp x 10dp square top-center cutout:
-            <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
-        @see https://www.w3.org/TR/SVG/paths.html#PathData
-         -->
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -33 V 93 H 33 V 0 H 0 Z</string>
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 
-    <!-- Setting this true forces the headset jack switches to use the/dev/input/event subsystem
-                  rather than the uevent framework. -->
-    <bool name="config_useDevInputEventForAudioJack">true</bool>
+    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
+        will be used. -->
+    <integer name="config_burnInProtectionMaxRadius">70</integer>
+
+    <!-- Specifies the minimum burn-in offset horizontally. -->
+    <integer name="config_burnInProtectionMinHorizontalOffset">-15</integer>
+
+    <!-- Specifies the maximum burn-in offset horizontally. -->
+    <integer name="config_burnInProtectionMaxHorizontalOffset">15</integer>
+
+    <!-- Specifies the minimum burn-in offset vertically. -->
+    <integer name="config_burnInProtectionMinVerticalOffset">-40</integer>
+
+    <!-- Specifies the maximum burn-in offset vertically. -->
+    <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
+
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">90</integer>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
