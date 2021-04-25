@@ -100,6 +100,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     WifiOverlay
 
+# Overlays -- Override vendor ones
+PRODUCT_PACKAGES += \
+    FrameworksResTarget \
+    DevicesOverlay \
+    DevicesAndroidOverlay
+
 # Partitions 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
