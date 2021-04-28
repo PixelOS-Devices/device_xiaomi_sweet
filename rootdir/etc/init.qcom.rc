@@ -3,3 +3,9 @@ on post-fs-data
 service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
     override
     disabled
+
+on late-fs
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.qti.hardware.display.allocator
