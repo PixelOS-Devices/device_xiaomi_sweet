@@ -83,6 +83,7 @@ void vendor_load_properties() {
     std::string device;
     std::string fingerprint;
     std::string description;
+    std::string marketname;
     std::string mod_device;
 
     if (region == "GLOBAL") {
@@ -90,6 +91,7 @@ void vendor_load_properties() {
         device = "sweet";
         fingerprint = "Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.0.10.0.RKFEUXM:user/release-keys";
         description = "sweet_eea-user 11 RKQ1.200826.002 V12.0.10.0.RKFEUXM release-keys";
+        marketname = "Redmi Note 10 Pro";
         mod_device = "sweet_eea_global";
     } else if (region == "INDIA") {
         if (sku == "std") {
@@ -97,12 +99,14 @@ void vendor_load_properties() {
             device = "sweetin";
             fingerprint = "Redmi/sweetin/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
             description = "sweetin-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+            marketname = "Redmi Note 10 Pro";
             mod_device = "sweetin_in_global";
         } else {
                 model = "M2101K6I";
                 device = "sweetin";
                 fingerprint = "Redmi/sweetinpro/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
                 description = "sweetinpro-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+                marketname = "Redmi Note 10 Pro Max";
                 mod_device = "sweetin_in_global";
             }
         }
@@ -110,6 +114,7 @@ void vendor_load_properties() {
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
+    property_override("ro.product.marketname", marketname.c_str());
     property_override("ro.build.description", description.c_str());
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
