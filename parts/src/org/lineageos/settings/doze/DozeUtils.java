@@ -75,14 +75,14 @@ public final class DozeUtils {
         return false;
     }
 
-    public static boolean enableDoze(Context context, boolean enable) {
+    protected static boolean enableDoze(Context context, boolean enable) {
         return Settings.Secure.putInt(context.getContentResolver(),
                 DOZE_ENABLED, enable ? 1 : 0);
     }
 
     public static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
-                DOZE_ENABLED, 0) != 0;
+                DOZE_ENABLED, 1) != 0;
     }
 
     protected static void wakeOrLaunchDozePulse(Context context) {
