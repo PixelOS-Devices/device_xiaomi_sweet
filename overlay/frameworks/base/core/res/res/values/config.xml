@@ -815,4 +815,7 @@
     <!-- Delay that allows some content to arrive at the display before switching
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
+
+    <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
+    <bool name="config_unplugTurnsOnScreen">true</bool>
 </resources>
