@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.sweet
+    android.hardware.lights-service.qti-sweet
 
 # NFC
 PRODUCT_PACKAGES += \
