@@ -97,7 +97,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # rro_overlays
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiOverlay \
+    SweetinproSettingsProvider \
+    SweetinproWifiOverlay
 
 # Overlays -- Override vendor ones
 PRODUCT_PACKAGES += \
