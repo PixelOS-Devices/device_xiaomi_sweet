@@ -19,6 +19,21 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+#include <cutils/properties.h>
+#include <string.h>
+
+inline const char* BtmGetDefaultName()
+{
+	char device[PROPERTY_VALUE_MAX];
+	property_get("ro.product.model", device, "");
+
+	if (!strcmp("M2101K6I", device)) {
+		return "Redmi Note 10 Pro Max";
+	}
+	return "Redmi Note 10 Pro";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    32
