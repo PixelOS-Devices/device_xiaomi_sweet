@@ -71,3 +71,7 @@ on property:vendor.post_boot.parsed=1
 
 on post-fs
     mount none /system/bin/hw/android.hardware.power-service /vendor/bin/hw/android.hardware.power-service bind
+    
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.default
