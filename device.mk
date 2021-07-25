@@ -45,7 +45,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    CutoutRingServiceSweet
 
 # Device Settings
 PRODUCT_PACKAGES += \
