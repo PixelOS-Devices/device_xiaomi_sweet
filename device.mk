@@ -45,7 +45,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    CutoutRingServiceSweet
 
 # Display
 PRODUCT_COPY_FILES += \
