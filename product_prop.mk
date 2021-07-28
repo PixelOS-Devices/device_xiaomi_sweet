@@ -10,7 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Chipset
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.soc.manufacturer=Qualcomm \
-	ro.soc.model=SDM7150
+	ro.soc.model=SM7150
 
 #DPI
 PRODUCT_PROPERTY_OVERRIDES += \
