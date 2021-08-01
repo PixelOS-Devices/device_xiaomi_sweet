@@ -1,3 +1,4 @@
 type display_data_file, data_file_type, core_data_file_type, file_type;
 type pps_socket, file_type;
 type sysfs_graphics, sysfs_type, fs_type;
+type touchfeature_device, dev_type;
