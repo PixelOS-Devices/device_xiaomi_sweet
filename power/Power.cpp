@@ -29,6 +29,15 @@
 
 #define LOG_TAG "QTI PowerHAL"
 
+// defines from drivers/input/touchscreen/xiaomi/xiaomi_touch.h
+#define SET_CUR_VALUE 0
+#define Touch_Doubletap_Mode 14
+
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
+
+#define TOUCH_MAGIC 0x5400
+#define TOUCH_IOC_SETMODE TOUCH_MAGIC + SET_CUR_VALUE
+
 #include "Power.h"
 
 #include <fcntl.h>
@@ -57,8 +66,6 @@ namespace hardware {
 namespace power {
 namespace impl {
 
-static ::android::sp<ITouchFeature> gTouchFeatureService = nullptr;
-
 void setInteractive(bool interactive) {
    set_interactive(interactive ? 1:0);
 }
@@ -68,9 +75,9 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     switch(type){
         case Mode::DOUBLE_TAP_TO_WAKE:
             {
-            if (!gTouchFeatureService) {
-            gTouchFeatureService = ITouchFeature::getService();
-            } gTouchFeatureService->setTouchMode(14, enabled ? 1 : 0);
+            int fd = open(TOUCH_DEV_PATH, O_RDWR);
+            int arg[2] = {Touch_Doubletap_Mode, enabled ? 1 : 0};
+            ioctl(fd, TOUCH_IOC_SETMODE, &arg);
             } break;
         case Mode::LOW_POWER:
         case Mode::LAUNCH:
