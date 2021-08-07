@@ -26,6 +26,9 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 AB_OTA_UPDATER := false
 
 # Audio
+
+TARGET_EXCLUDES_AUDIOFX := true
+
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper
