@@ -12,11 +12,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_specific_settings_title">Device-specific settings</string>
-    <string name="device_specific_settings_summary">Refresh rate configuration</string>
-    <string name="device_min_refresh_rate">Minimum Refresh Rate</string>
-    <string name="refresh_rate_tile_title">High Refresh Rate</string>
-    
     <!-- Dirac settings -->
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_headset_title">Headset type</string>
