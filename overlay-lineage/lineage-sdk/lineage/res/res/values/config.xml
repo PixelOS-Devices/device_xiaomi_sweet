@@ -29,4 +29,7 @@
     
     <!-- Whether device has a notch -->
     <bool name="config_haveNotch">true</bool>
+
+    <!-- Default values for LiveDisplay -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
 </resources>
