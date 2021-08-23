@@ -112,6 +112,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "CDCpuset",
+      "Path": "/dev/cpuset/camera-daemon/cpus",
+      "Values": [
+        "0-7",
+        "2-5"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "CDSchedtuneBoost",
       "Path": "/dev/stune/camera-daemon/schedtune.boost",
       "Values": [
@@ -445,6 +454,12 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CDCpuset",
+      "Duration": 5000,
+      "Value": "0-7"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
       "Node": "EnergyAware",
       "Duration": 1000,
       "Value": "0"
@@ -487,6 +502,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
+      "Node": "CDCpuset",
+      "Duration": 0,
+      "Value": "0-7"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_MID",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
       "Value": "1939200"
@@ -520,6 +541,12 @@
       "Node": "CDSchedtuneHighCap",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_HIGH",
+      "Node": "CDCpuset",
+      "Duration": 0,
+      "Value": "0-7"
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
@@ -580,6 +607,12 @@
       "Node": "LLCCBWHystLength",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "CDCpuset",
+      "Duration": 0,
+      "Value": "0-7"
     },
     {
       "PowerHint": "CAMERA_STREAMING_LOW",
