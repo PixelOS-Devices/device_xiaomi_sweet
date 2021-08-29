@@ -45,7 +45,7 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
       "Values": [
         "0",
-        "3"
+        "2"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -55,7 +55,7 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
       "Values": [
         "0",
-        "7"
+        "6"
       ],
       "ResetOnInit": true
     },
@@ -283,7 +283,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "3"
+      "Value": "2"
     },
     {
       "PowerHint": "INTERACTION",
