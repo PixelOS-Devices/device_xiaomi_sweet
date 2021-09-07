@@ -123,6 +123,18 @@
          minute. -->
     <item name="camera.avg">900</item>
 
+    <item name="gps.on">10</item> <!-- ~50mA -->
+
+    <!-- Radio related values. For modems without energy reporting support in firmware, use
+         radio.active, radio.scanning, and radio.on. -->
+    <item name="radio.active">124</item> <!-- ~200mA -->
+    <item name="radio.scanning">5.2</item>
+    <!-- Current consumed by the radio at different signal strengths, when paging -->
+    <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+        <value>58</value> <!-- ~2mA -->
+        <value>6.5</value> <!-- ~1mA -->
+    </array>
+
     <!-- Additional power used when video is playing -->
     <item name="video">25</item>
     <!-- Additional power used when audio is playing -->
@@ -157,4 +169,11 @@
     <!-- Operating volatage for wifi radio in mV.-->
     <item name="wifi.controller.voltage">3700</item>
 
+    <array name="wifi.batchedscan"> <!-- mA -->
+        <value>.0001</value> <!-- 1-8/hr -->
+        <value>.001</value>  <!-- 9-64/hr -->
+        <value>.01</value>   <!-- 65-512/hr -->
+        <value>.1</value>    <!-- 513-4,096/hr -->
+        <value>1</value>     <!-- 4097-/hr -->
+    </array>
 </device>
