@@ -21,6 +21,7 @@ $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # A/B
 AB_OTA_UPDATER := false
