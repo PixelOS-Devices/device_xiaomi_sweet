@@ -162,15 +162,3 @@ PRODUCT_BOOT_JARS += \
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libnl \
-    libqdMetaData \
-    libavservices_minijail \
-    libavservices_minijail_32 \
-    vendor.display.config@2.0
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
