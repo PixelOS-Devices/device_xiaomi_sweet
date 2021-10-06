@@ -104,8 +104,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
-        final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setTitle(getResources().getString(R.string.thermal_title));
+        getActivity().setTitle(getResources().getString(R.string.thermal_title));
         rebuild();
     }
 
