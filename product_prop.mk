@@ -34,6 +34,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_default=7 \
 	ro.config.vc_call_vol_steps=11
 
+# Priv-app permission
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.dbg.volte_avail_ovr=1 \
