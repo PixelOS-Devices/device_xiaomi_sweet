@@ -86,10 +86,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti-sweet
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
