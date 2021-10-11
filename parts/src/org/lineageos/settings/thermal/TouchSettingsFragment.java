@@ -15,10 +15,8 @@
  */
 package org.lineageos.settings.thermal;
 
-import android.app.ActionBar;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
@@ -50,10 +48,7 @@ public class TouchSettingsFragment extends PreferenceFragment
             packageName = bundle.getString("packageName", "");
         }
 
-        final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setTitle(appName);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
+        getActivity().setTitle(appName);
         mGameMode = (SwitchPreference) findPreference(Constants.PREF_TOUCH_GAME_MODE);
         mTouchResistant = (SeekBarPreference) findPreference(Constants.PREF_TOUCH_RESISTANT);
         mTouchResponse = (SeekBarPreference) findPreference(Constants.PREF_TOUCH_RESPONSE);
@@ -71,15 +66,6 @@ public class TouchSettingsFragment extends PreferenceFragment
     public void onPause() {
         super.onPause();
         mSharedPrefs.unregisterOnSharedPreferenceChangeListener(this);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            getActivity().onBackPressed();
-            return true;
-        }
-        return false;
     }
 
     @Override
