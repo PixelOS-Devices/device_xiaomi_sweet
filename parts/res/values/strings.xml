@@ -12,7 +12,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Use ambient display</string>
+
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable dirac</string>
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_headset_title">Headset type</string>
     <string name="dirac_hifi_enable_title"> Enable Hi-fi</string>
