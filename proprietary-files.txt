@@ -163,7 +163,7 @@ vendor/lib64/mibokeh_712_opencl.bin
 -vendor/lib64/libarcsoft_portrait_lighting.so
 -vendor/lib64/libarcsoft_portrait_lighting_c.so
 -vendor/lib64/libarcsoft_preview_deflicker.so
--vendor/lib64/libarcsoft_super_night_raw.so
+-vendor/lib64/libarcsoft_super_night_raw.so|a725136e8fe0c9ffd6b5ed527fd480478c9fd57d
 
 # Camera-components
 -vendor/lib64/camera/components/com.altek.node.depurple.so
