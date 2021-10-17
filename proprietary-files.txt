@@ -170,7 +170,7 @@ vendor/lib64/libarcsoft_hta.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_preview_deflicker.so
-vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF|a725136e8fe0c9ffd6b5ed527fd480478c9fd57d
 
 # Camera-components
 vendor/lib64/camera/components/com.altek.node.depurple.so
