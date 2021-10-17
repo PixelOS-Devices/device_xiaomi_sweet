@@ -39,6 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.dbg.volte_avail_ovr=1 \
 	persist.dbg.vt_avail_ovr=1 \
 	persist.dbg.wfc_avail_ovr=1 \
+	persist.sys.fflag.override.settings_provider_model=false \
 	persist.vendor.radio.enable_temp_dds=true \
 	persist.vendor.radio.report_codec=1 \
 	persist.vendor.ims.disableADBLogs=1 \
