@@ -50,3 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.ims.disableDebugLogs=1 \
 	persist.vendor.ims.disableIMSLogs=1 \
 	persist.vendor.ims.disableQXDMLogs=1
+
+# One Handed Mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=true
