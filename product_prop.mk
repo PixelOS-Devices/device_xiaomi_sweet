@@ -45,6 +45,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.sf.duration=16600000 \
     debug.sf.earlyGl.app.duration=16600000
 
+# Perfetto
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Render Engine
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.renderer=skiagl \
