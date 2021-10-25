@@ -12,7 +12,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.sf.disable_backpressure=1 \
 	debug.sf.enable_hwc_vds=1 \
 	ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-	vendor.display.disable_metadata_dynamic_fps=1
+	vendor.display.disable_metadata_dynamic_fps=1 \
+        debug.sf.enable_gl_backpressure=1
 
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
