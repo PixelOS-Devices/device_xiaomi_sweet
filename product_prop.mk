@@ -13,7 +13,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.sf.enable_hwc_vds=1 \
 	ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 	vendor.display.disable_metadata_dynamic_fps=1 \
-        debug.sf.enable_gl_backpressure=1
+        debug.sf.enable_gl_backpressure=1 \
+        debug.sf.use_phase_offsets_as_durations=1 \
+        debug.sf.late.sf.duration=10500000 \
+        debug.sf.late.app.duration=16600000 \
+        debug.sf.early.sf.duration=16600000 \
+        debug.sf.early.app.duration=16600000 \
+        debug.sf.earlyGl.sf.duration=16600000 \
+        debug.sf.earlyGl.app.duration=16600000 
 
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
