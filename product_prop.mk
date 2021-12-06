@@ -20,7 +20,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
         debug.sf.early.sf.duration=16600000 \
         debug.sf.early.app.duration=16600000 \
         debug.sf.earlyGl.sf.duration=16600000 \
-        debug.sf.earlyGl.app.duration=16600000 
+        debug.sf.earlyGl.app.duration=16600000 \
+        debug.hwui.renderer=skiagl \
+        debug.renderengine.backend=skiaglthreaded \
+        renderthread.skia.reduceopstasksplitting=true
 
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
