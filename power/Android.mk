@@ -9,6 +9,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_STEM := android.hardware.power-service
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libbase libhidlbase libhidltransport libbinder_ndk libutils android.hardware.power-V1-ndk_platform
 LOCAL_HEADER_LIBRARIES += libutils_headers

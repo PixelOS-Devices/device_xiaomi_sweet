@@ -120,10 +120,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.sweet
-
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := false
