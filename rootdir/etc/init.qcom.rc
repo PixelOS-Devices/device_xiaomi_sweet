@@ -64,6 +64,3 @@ on property:vendor.post_boot.parsed=1
     write /sys/block/sdd/queue/read_ahead_kb 128
     write /sys/block/sde/queue/read_ahead_kb 128
     write /sys/block/sdf/queue/read_ahead_kb 128
-
-on post-fs
-    mount none /system/bin/hw/android.hardware.power-service /vendor/bin/hw/android.hardware.power-service bind
