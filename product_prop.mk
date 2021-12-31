@@ -34,6 +34,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_default=7 \
 	ro.config.vc_call_vol_steps=11
 
+# Phase Gffset
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.use_phase_offsets_as_durations=1 \
+    debug.sf.late.sf.duration=10500000 \
+    debug.sf.late.app.duration=16600000 \
+    debug.sf.early.sf.duration=16600000 \
+    debug.sf.early.app.duration=16600000 \
+    debug.sf.earlyGl.sf.duration=16600000 \
+    debug.sf.earlyGl.app.duration=16600000
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.dbg.volte_avail_ovr=1 \
