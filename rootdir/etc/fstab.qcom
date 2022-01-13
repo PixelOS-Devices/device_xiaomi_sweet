@@ -44,6 +44,7 @@ vendor                                                  /vendor                 
 odm                                                     /odm                     ext4    ro,barrier=1,discard                                 wait,avb,logical,first_stage_mount
 odm                                                     /odm                     erofs   ro                                                   wait,avb,logical,first_stage_mount
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1                       wait
+/dev/block/bootdevice/by-name/cache                     /cache                   f2fs    nosuid,nodev,noatime,barrier=1,inline_xattr,flush_merge,data_flush  wait
 /dev/block/bootdevice/by-name/boot                      /boot                    emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/recovery                  /recovery                emmc    defaults                                             defaults
 /dev/block/by-name/metadata                             /metadata                ext4    noatime,nosuid,nodev,discard                         wait,formattable,check,first_stage_mount
