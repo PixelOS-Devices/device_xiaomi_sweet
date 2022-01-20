@@ -1,5 +1,8 @@
 on post-fs-data
 
+    mount none /dev/null vendor/lib/hw/sound_trigger.primary.sm6150.so bind
+    mount none /dev/null vendor/lib64/hw/sound_trigger.primary.sm6150.so bind
+
 service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
     override
     disabled
