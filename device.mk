@@ -17,6 +17,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 
+# ANXCamera
+$(call inherit-product, vendor/ANXCamera/anx-vendor.mk)
+
 # The first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -52,7 +55,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     CutoutRingServiceSweet
 
 # Device Settings
