@@ -6,9 +6,6 @@
 
 android_app {
     name: "XiaomiParts",
-    defaults: [
-        "SettingsLibDefaults",
-    ],
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -18,9 +15,7 @@ android_app {
     privileged: true,
 
     static_libs: [
-        "androidx.core_core",
-        "androidx.preference_preference",
-        "org.lineageos.settings.resources",
+        "org.pixelexperience.settings.resources",
         "vendor.xiaomi.hardware.touchfeature-V1.0-java",
         "SettingsLib",
     ],
