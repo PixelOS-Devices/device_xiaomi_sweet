@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Touchscreen
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.sweet
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
