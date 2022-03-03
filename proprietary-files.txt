@@ -128,3 +128,19 @@ vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundf
 
 # Telephony
 #system_ext/framework/qti-telephony-common.jar
+
+# Vibrator
+system/lib64/android.hardware.vibrator@1.0.so
+system/lib64/android.hardware.vibrator@1.1.so
+system/lib64/android.hardware.vibrator@1.2.so
+system/lib64/android.hardware.vibrator@1.3.so
+system/lib64/android.hardware.vibrator-V2-cpp.so
+system/lib64/libvibratorservice.so
+system/lib64/libvibrator.so
+system/lib/android.hardware.vibrator@1.0.so
+system/lib/android.hardware.vibrator@1.1.so
+system/lib/android.hardware.vibrator@1.2.so
+system/lib/android.hardware.vibrator@1.3.so
+system/lib/android.hardware.vibrator-V2-cpp.so
+system/lib/libvibratorservice.so
+system/lib/libvibrator.so
