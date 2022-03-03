@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from sweetin-qssi-user-11-RKQ1.200826.002-V12.0.8.0.RKFINXM-release-keys
+# All unpinned blobs are extracted from sweet-qssi-user-12-RKQ1.210614.002-V13.0.4.0.SKFMIXM-release-keys
 
 # Bluetooth (aptX)
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -98,6 +98,7 @@ system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.ims.factory@1.0.so
+system_ext/lib64/vendor.qti.ims.factory@1.1.so
 -system_ext/priv-app/ims/ims.apk
 
 # Perf
@@ -118,7 +119,6 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 
