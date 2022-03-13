@@ -41,7 +41,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.media_vol_default=10 \
-	ro.config.media_vol_steps=25 \
+	ro.config.media_vol_steps=15 \
 	ro.config.vc_call_vol_default=7 \
 	ro.config.vc_call_vol_steps=11
 
@@ -57,12 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # App
 PRODUCT_PROPERTY_OVERRIDES += \
-        persist.device_config.runtime_native_boot.iorap_perfetto_enable=true \
 	ro.launcher.blur.appLaunch=0
-
-# Perfetto
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Render Engine
 PRODUCT_PROPERTY_OVERRIDES += \
