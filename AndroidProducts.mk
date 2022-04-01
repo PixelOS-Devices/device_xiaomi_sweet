@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_sweet.mk
+    $(LOCAL_DIR)/aosp_sweet.mk
