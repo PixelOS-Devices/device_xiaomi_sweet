@@ -75,8 +75,8 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libhta.so
 -vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
--vendor/lib64/libmegface.so
--vendor/lib64/libMegviiFacepp-0.5.2.so
+-vendor/lib64/libmegface.so;MODULE=libmegface.so_sweet
+-vendor/lib64/libMegviiFacepp-0.5.2.so;MODULE=libMegviiFacepp-0.5.2.so_sweet
 -vendor/lib64/libmiai_portraitsupernight.so
 -vendor/lib64/libmialgo_fs.so
 -vendor/lib64/libmialgo_ie_capture.so
@@ -85,7 +85,7 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libmialgo_utils.so
 -vendor/lib64/libmialgoengine.so
 -vendor/lib64/libmibokeh_712.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase.so_sweet
 -vendor/lib64/libmulticam_image_optical_zoom.so
 -vendor/lib64/libmulticam_video_optical_zoom.so
 -vendor/lib64/libPSNPE.so
