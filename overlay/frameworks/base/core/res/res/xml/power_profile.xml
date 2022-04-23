@@ -43,7 +43,7 @@
     <item name="cpu.cluster_power.cluster1">2.2</item>
 
     <!-- Different CPU speeds as reported in
-         /sys/devices/system/cpu/cpufreq/ploicy0/scaling_available_frequencies -->
+         /sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies -->
     <array name="cpu.core_speeds.cluster0">
       <value>576000</value> <!-- 576 MHz CPU speed -->
       <value>768000</value> <!-- 768 MHz CPU speed -->
@@ -56,7 +56,7 @@
       <value>1804800</value> <!-- 1804 MHz CPU speed -->
     </array>
     <!-- Different CPU speeds as reported in
-         /sys/devices/system/cpu/cpufreq/ploicy6/scaling_available_frequencies -->
+         /sys/devices/system/cpu/cpufreq/policy6/scaling_available_frequencies -->
     <array name="cpu.core_speeds.cluster1">
       <value>652800</value> <!-- 652 MHz CPU speed -->
       <value>806400</value> <!-- 806 MHz CPU speed -->
