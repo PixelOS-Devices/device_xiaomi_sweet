@@ -23,10 +23,10 @@
     <dimen name="rounded_corner_content_padding">10dp</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">10dp</dimen>
+    <dimen name="status_bar_padding_start">12dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">8dp</dimen>
+    <dimen name="status_bar_padding_end">5dp</dimen>
 
     <!-- The maximum offset in either direction that elements are moved vertically to prevent
          burn-in on status bar and navigation bar. -->
@@ -45,4 +45,4 @@
     For devices with sensors on the back of the device, this corresponds to the location on the
     screen directly in front of the sensor.  -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1100px</dimen>
-</resources> 
+</resources>
