@@ -73,7 +73,6 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libFaceGrade.so
 -vendor/lib64/libft2vendor.so
 -vendor/lib64/libhta.so
--vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
 -vendor/lib64/libmegface.so;MODULE=libmegface.so_sweet
 -vendor/lib64/libMegviiFacepp-0.5.2.so;MODULE=libMegviiFacepp-0.5.2.so_sweet
