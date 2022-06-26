@@ -128,7 +128,7 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libmialgo_utils.so
 -vendor/lib64/libmialgoengine.so
 -vendor/lib64/libmibokeh_712.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase_vendor
 -vendor/lib64/libmulticam_image_optical_zoom.so
 -vendor/lib64/libmulticam_video_optical_zoom.so
 -vendor/lib64/librelight_only.so
