@@ -275,6 +275,16 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
+# Display
+vendor/lib64/hw/hwcomposer.sm6150.so
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+
+# Display Feature
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE=vendor.xiaomi.hardware.displayfeature@1.0_vendor
+
 # DRM
 -vendor/lib64/liboemcrypto.so
 
@@ -364,6 +374,16 @@ vendor/etc/sensors/config/tsl2540.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
+
+# Sensor Service
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/libnanopb.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 
 # Sensors Ultrasound
 vendor/etc/elliptic_sensor.xml
