@@ -1,0 +1,5 @@
+# Display Feature
+vendor.xiaomi.hardware.displayfeature::IDisplayFeature                                u:object_r:hal_displayfeature_xiaomi_hwservice:s0
+
+# Sensor Service
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService                            u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0

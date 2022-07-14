@@ -1,0 +1,5 @@
+# Display Feature
+type hal_displayfeature_xiaomi_hwservice, hwservice_manager_type;
+
+# Sensor Service
+type vendor_hal_citsensorservice_xiaomi_hwservice, hwservice_manager_type;

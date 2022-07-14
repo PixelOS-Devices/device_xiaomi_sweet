@@ -1,3 +1,6 @@
+# Display Feature
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service u:object_r:hal_displayfeature_xiaomi_default_exec:s0
+
 # IR
 /dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
 
@@ -12,6 +15,9 @@
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
+
+# Sensor Service
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 
 # Touch
 /vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.sweet            u:object_r:hal_lineage_touch_default_exec:s0
