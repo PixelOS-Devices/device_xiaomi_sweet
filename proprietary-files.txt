@@ -279,6 +279,7 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|69755c55507ad9cde3
 vendor/lib64/hw/hwcomposer.sm6150.so
 vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisplayqos.so
+vendor/lib64/libdpps.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdedrm.so
