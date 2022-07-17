@@ -12,3 +12,6 @@
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
+
+# Xiaomi CIT sensor service
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service                  u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0

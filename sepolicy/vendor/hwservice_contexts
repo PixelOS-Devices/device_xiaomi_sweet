@@ -1,0 +1,2 @@
+# Xiaomi CIT sensor service
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService   u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
