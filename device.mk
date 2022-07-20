@@ -33,7 +33,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
 
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    libgui_vendor \
+    libsdmcore-shim
 
 # Fstab
 PRODUCT_COPY_FILES += \
