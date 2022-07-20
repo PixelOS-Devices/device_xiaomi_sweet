@@ -1,3 +1,0 @@
-type sysfs_touchpanel, fs_type, sysfs_type;
-
-allow hal_lineage_touch_default sysfs_touchpanel:file rw_file_perms;
