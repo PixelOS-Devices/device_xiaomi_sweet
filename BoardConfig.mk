@@ -30,7 +30,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aosp/config/device_framewor
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += sweet
 ODM_MANIFEST_SWEET_FILES := \
-    $(COMMON_PATH)/configs/hidl/manifest-qva.xml \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Init
