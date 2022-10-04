@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.8.0.SKFMIXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.15.0.SKFEUXM, unless pinned
 
 # Audio ACDB
 -vendor/lib/libacdb-fts.so
@@ -82,7 +82,6 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libdualcam_video_optical_zoom.so
 -vendor/lib64/libft2vendor.so
 -vendor/lib64/libhta.so
--vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
 -vendor/lib64/libmiai_portraitsupernight.so
 -vendor/lib64/libmialgo_fs.so
