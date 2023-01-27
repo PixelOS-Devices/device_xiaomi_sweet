@@ -1,2 +1,5 @@
 # Display
 ro.sf.force_hwc_brightness=1
+
+# Fluence
+ro.vendor.audio.sdk.fluencetype=fluence
