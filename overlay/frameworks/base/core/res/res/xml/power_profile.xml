@@ -76,7 +76,6 @@
     <!-- Additional power used by a CPU core from cluster 0 when running at
          different speeds, excluding cluster and active cost -->
     <array name="cpu.core_power.cluster0">
-      <value>34.55</value> <!-- 300 MHz CPU speed -->
       <value>46.57</value> <!-- 576 MHz CPU speed -->
       <value>54.84</value> <!-- 768 MHz CPU speed -->
       <value>68.16</value> <!-- 1017 MHz CPU speed -->
@@ -90,7 +89,6 @@
     <!-- Additional power used by a CPU core from cluster 1 when running at
          different speeds, excluding cluster and active cost -->
     <array name="cpu.core_power.cluster1">
-      <value>42.23</value> <!-- 300 MHz CPU speed -->
       <value>56.92</value> <!-- 652 MHz CPU speed -->
       <value>63.41</value> <!-- 806 MHz CPU speed -->
       <value>73.03</value> <!-- 979 MHz CPU speed -->
