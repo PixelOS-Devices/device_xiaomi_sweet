@@ -7,6 +7,9 @@
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-sweet/BoardConfig.mk
+
 DEVICE_PATH := device/xiaomi/sweet
 
 # Assert
