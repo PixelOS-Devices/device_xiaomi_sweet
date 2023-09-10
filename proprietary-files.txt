@@ -67,6 +67,9 @@ vendor/firmware/awinic/aw882xx_spk_reg_l.bin
 vendor/firmware/awinic/aw882xx_spk_reg_r.bin
 vendor/firmware/osc_rtp_24K_5s.bin
 
+# Audio FX modules - OS1.0.3.0.THGMIXM (SWEETK6AGlobal)
+-vendor/lib/soundfx/libmisoundfx.so|ba3e396140c01228b4be849d579659ae8cec327c
+
 # Audio HAL
 -vendor/lib/hw/audio.primary.sm6150.so
 -vendor/lib/libadm.so
@@ -338,6 +341,25 @@ vendor/firmware/a630_sqe.fw
 
 # IR
 -vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+
+# Media (Dolby) - OS1.0.3.0.THGMIXM (SWEETK6AGlobal)
+-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|13457b78a8ec28ccb814700d21774ed7f3c22dd2
+vendor/etc/dolby/dax-default.xml|3239aa3d51d0242351d71a15b7984a39b5b2aa92|aef9cfd266d578f0c12ce2c9e7f0c1bce38c0480
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+-vendor/lib/libdapparamstorage.so|adad562803bd15c3793d14bc2c9bb1ef36e70854
+-vendor/lib/libdeccfg.so|15ee74974b96595bbd573e1982f4f0841f989740
+-vendor/lib/libstagefright_soft_ac4dec.so|b0d59c2bd91384776afa08f3cc24df868a03b8da|601b21fd9d14b4c29adec3af5fb152a0d13d4a29
+-vendor/lib/libstagefright_soft_ddpdec.so|181c115db20cd09bd1fe78114aa5eaf3bca7e6b5|f4fe3ac413cf92e9243557fefe6afaa8693d6fd2
+-vendor/lib/soundfx/libhwdap.so|52bb83ad8b11e5af5e1cd0194206b52900740c6c
+-vendor/lib/soundfx/libswgamedap.so|2519230d1f9fa8690e1cfe102fa259c4e66f495d
+-vendor/lib/soundfx/libswvqe.so|681af2caea4d83b77feeffd988e0be6b72b26c40
+-vendor/lib/vendor.dolby.hardware.dms@2.0.so|a3e97168f1cfbafc4c6492bc26a45b039e1e61f4
+-vendor/lib64/libdapparamstorage.so|67ae45857561cb0450b872de1e7896ad7346481c
+-vendor/lib64/libdlbdsservice.so|508e066110153d24d6b704f42b2f846bacc61a23|c0691c19eff9698787e930d20cd37be0fc359455
+-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|5e742e5691c874877ca78dc7664bb7c4a97fe9af
+-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|5320bc52055155c16a554ed65f9ccd48d9165232
 
 # NFC
 vendor/etc/libnfc-nci.conf
