@@ -1,3 +1,9 @@
+# Data files
+/data/vendor/dolby(/.*)?                                             u:object_r:vendor_data_file:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service   u:object_r:hal_dms_default_exec:s0
+
 # IR
 /dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
 
