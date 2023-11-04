@@ -54,5 +54,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2023-09-01
 
+# Vibrator
+TARGET_QTI_VIBRATOR_EFFECT_LIB := libqtivibratoreffect.xiaomi
+TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM := true
+
 # Inherit from proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
