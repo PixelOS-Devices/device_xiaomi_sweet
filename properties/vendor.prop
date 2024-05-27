@@ -17,5 +17,12 @@ vendor.display.override_doze_mode=1
 # Fluence
 ro.vendor.audio.sdk.fluencetype=fluence
 
+# HVDCP
+persist.vendor.cp.support_qc3p5=0
+persist.vendor.cp.taper_term_mv=5000
+persist.vendor.qg.cld_coff_gain=1.5
+persist.vendor.qg.coff_gain=1
+persist.vendor.qg.cold_temp=-150
+
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
