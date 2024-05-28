@@ -10,9 +10,11 @@ function blob_fixup() {
     case "${1}" in
         vendor/etc/init/init.batterysecret.rc)
             sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
+            sed -i "s|on charger|on property:init.svc.vendor.charger=running|g" "${2}"
             ;;
         vendor/etc/init/init.mi_thermald.rc)
             sed -i "/seclabel u:r:mi_thermald:s0/d" "${2}"
+            sed -i "s|on charger|on property:init.svc.vendor.charger=running|g" "${2}"
             ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
