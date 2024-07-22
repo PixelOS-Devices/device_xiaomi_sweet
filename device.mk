@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hwcomposer.qcom
 
+# Dolby
+TARGET_USES_DOLBY := true
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.sweet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sweet.rc
