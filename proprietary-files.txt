@@ -336,9 +336,6 @@ vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
 
-# IR
--vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
-
 # Media (Dolby)
 -vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
