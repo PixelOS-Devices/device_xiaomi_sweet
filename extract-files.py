@@ -57,6 +57,24 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('rpcmem_alloc')
         .clear_symbol_version('rpcmem_free')
         .clear_symbol_version('rpcmem_to_fd'),
+    # Dolby START
+    'odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service': blob_fixup()
+        .replace_needed('libcodec2_hidl@1.0.so', 'libcodec2_hidl@1.0_sp.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_sp.so'),
+    ('odm/lib64/libcodec2_hidl_plugin_sp.so', 'odm/lib64/libcodec2_soft_common_sp.so', 'odm/lib64/libcodec2_store_dolby_sp.so'): blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_sp.so'),
+    ('odm/lib64/libcodec2_soft_ac4dec_sp.so', 'odm/lib64/libcodec2_soft_ddpdec_sp.so'): blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_sp.so')
+        .replace_needed('libcodec2_soft_common.so', 'libcodec2_soft_common_sp.so'),
+    'odm/lib64/libcodec2_vndk_sp.so': blob_fixup()
+        .replace_needed('libui.so', 'libui_sp.so'),
+    'odm/lib64/libcodec2_hidl@1.0_sp.so': blob_fixup()
+        .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin_sp.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_sp.so'),
+    'odm/lib64/libui_sp.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
+        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+    # Dolby END
 }  # fmt: skip
 
 module = ExtractUtilsModule(
