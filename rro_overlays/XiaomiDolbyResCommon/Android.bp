@@ -1,0 +1,9 @@
+//
+// Copyright (C) 2025 PixelOS
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "XiaomiDolbyResCommon",
+    device_specific: true,
+}
